@@ -37,26 +37,82 @@
 <div class="inner">
 
     <!-- Header -->
+    
     <header>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!--<img class="img-responsive" src="img/profile.png" alt=""> -->
-                    <div class="intro-text">
-                        <span class="name">Harry Brown</span>
-						<br>
-                        <span class="skills">1st Year Computing, Imperial College London</span>
+            
+            <div class="home">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!--<img class="img-responsive" src="img/profile.png" alt=""> -->
+                        <div class="intro-text">
+                            <span class="name">Harry Brown</span>
+                            <br>
+                            <span class="skills">1st Year Computing, Imperial College London</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+        
+                    
+            <div class="about" style="display: none">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!--<img class="img-responsive" src="img/profile.png" alt=""> -->
+                        <div class="intro-text">
+                            <span class="name">ABOUT</span>
+                            <br>
+                            <span class="skills">1st Year Computing, Imperial College London</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="projects" style="display: none">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-text">
+                            <span class="name">PROJECTS</span>
+                            <h5>Click a project name to show / hide the content</h5>
+                            <br>
+                            <div class="screenprintname">
+                                <span class="skills">ScreenPrint</span>
+                            </div>
+                            <div class="screenprint" style="display: none">
+                                <p>ScreenPrint is a small program written in Visual Studio to replace Windows' <i>Snipping Tool</i>. It adds keyboard shortcuts, multiple clipboards, automatic saving and a colour picker to make taking screenshots more efficient.</p>
+                                <img src="img/screenprint1.gif" width=70%>
+                                <br>
+                                <h3><a href="download/ScreenPrint 1.0.3.0.zip">DOWNLOAD</a></h3><h5> (363kb)</h5><h3><a href="https://github.com/harryrbrown/ScreenPrint">VIEW SOURCE CODE</a></h3>
+                            </div>
+                            <hr>
+                            <br>
+                            <div class="fallenname">
+                                <span class="skills">Fallen</span>
+                            </div>
+                            <div class="fallen" style="display: none">
+                                <p>Fallen is a game for Android, available on the Google Play Store. The aim of the game is to turn a pipe to keep falling for as long as possible. Includes Google Play Games integration, with leaderboard and achievements.</p>
+                                <img src="https://lh3.googleusercontent.com/ouLU3EDs7iBqh-QGFSnhev7L3__OL64rFQUQhKtL61rDTACJxPaHY2Q9OU3420KLTZQ=h900-rw" width=70%>
+                                <br>
+                                <h3><a href="https://play.google.com/store/apps/details?id=com.Suune.Faller">VIEW ON PLAY STORE</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+    </div>
 
     <!-- Footer -->
     <footer class="text-center">
         <div class="footer-above">
             <div class="container">
-            <h4>HOME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.html">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="projects.html">PROJECTS</a></h4>
+                <div class="links">
+                <h4>
+                <div class="btnhome whitelink"><a href="#">HOME</a></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="btnabout"><a href="#">ABOUT</a></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="btnprojects"><a href="#">PROJECTS</a></div></h4>
+            </div>
                 <div class="row">
                     <div class="footer-col col-md-4">
                     </div>
@@ -103,6 +159,41 @@
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+        $(".btnhome").click(function(){
+            $(".projects").hide(500);
+            $(".about").hide(500);
+            $(".home").show(500);
+            $(".btnhome").addClass('whitelink');
+            $(".btnabout").removeClass('whitelink');
+            $(".btnprojects").removeClass('whitelink');
+        });
+        $(".btnabout").click(function(){
+            $(".projects").hide(500);
+            $(".home").hide(500);
+            $(".about").show(500);
+            $(".btnhome").removeClass('whitelink');
+            $(".btnabout").addClass('whitelink');
+            $(".btnprojects").removeClass('whitelink');
+        });
+        $(".btnprojects").click(function(){
+            $(".home").hide(500);
+            $(".about").hide(500);
+            $(".projects").show(500);
+            $(".btnhome").removeClass('whitelink');
+            $(".btnabout").removeClass('whitelink');
+            $(".btnprojects").addClass('whitelink');
+        });
+        $(".screenprintname").click(function(){
+            $(".screenprint").toggle(500);
+        });
+        $(".fallenname").click(function(){
+            $(".fallen").toggle(500);
+        });
+    });
+    </script>
     
    </div>
 

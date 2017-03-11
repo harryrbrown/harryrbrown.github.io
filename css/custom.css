@@ -24,3 +24,15 @@ header {
     background-color: white;
     color: #ED254E;
 }
+
+.links {
+    align: center;
+}
+
+.btnhome, .btnabout, .btnprojects {
+    display: inline;
+}
+
+.whitelink a {
+    color: white;
+}
