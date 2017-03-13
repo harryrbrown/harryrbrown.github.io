@@ -163,34 +163,55 @@
     <script>
     $(document).ready(function(){
         $(".btnhome").click(function(){
-            $(".projects").hide(500);
-            $(".about").hide(500);
-            $(".home").show(500);
+			if ($(".projects").css('display') != 'none') {
+				$(".projects").slideToggle();
+			}
+			if ($(".about").css('display') != 'none') {
+				$(".about").slideToggle();
+			}
+			if ($(".home").css('display') == 'none') {
+				$(".home").slideToggle();
+			}
+            
             $(".btnhome").addClass('whitelink');
             $(".btnabout").removeClass('whitelink');
             $(".btnprojects").removeClass('whitelink');
         });
         $(".btnabout").click(function(){
-            $(".projects").hide(500);
-            $(".home").hide(500);
-            $(".about").show(500);
+            if ($(".projects").css('display') != 'none') {
+				$(".projects").slideToggle();
+			}
+			if ($(".home").css('display') != 'none') {
+				$(".home").slideToggle();
+			}
+			if ($(".about").css('display') == 'none') {
+				$(".about").slideToggle();
+			}
+			
             $(".btnhome").removeClass('whitelink');
             $(".btnabout").addClass('whitelink');
             $(".btnprojects").removeClass('whitelink');
         });
         $(".btnprojects").click(function(){
-            $(".home").hide(500);
-            $(".about").hide(500);
-            $(".projects").show(500);
+			if ($(".home").css('display') != 'none') {
+				$(".home").slideToggle();
+			}
+			if ($(".about").css('display') != 'none') {
+				$(".about").slideToggle();
+			}
+			if ($(".projects").css('display') == 'none') {
+				$(".projects").slideToggle();
+			}
+			
             $(".btnhome").removeClass('whitelink');
             $(".btnabout").removeClass('whitelink');
             $(".btnprojects").addClass('whitelink');
         });
         $(".screenprintname").click(function(){
-            $(".screenprint").toggle(500);
+            $(".screenprint").slideToggle();
         });
         $(".fallenname").click(function(){
-            $(".fallen").toggle(500);
+            $(".fallen").slideToggle();
         });
     });
     </script>

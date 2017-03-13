@@ -36,3 +36,7 @@ header {
 .whitelink a {
     color: white;
 }
+
+.projects span.skills {
+	cursor: pointer;
+}
