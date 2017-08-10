@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Imperial College Finances</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="../css/freelancer.min.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index" >
+
+<div class="inner">
+
+    <!-- Header -->
+
+      <header>
+          <div class="container">
+              <div class="home">
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <!--<img class="img-responsive" src="img/profile.png" alt=""> -->
+                          <div class="intro-text">
+                              <span class="name">Imperial College: Finances</span>
+                              <br>
+                              <span class="skills">Where is the money being spent?</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </header>
+    </div>
+
+    <section class="income">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Assets and Surpluses</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>Between 2011 and 2016, Imperial College added a total of <b>£537m</b> to its general reserves, with each year's budget shown below.</p>
+          </div>
+        </div>
+          <script type="text/javascript">
+            window.onload = function() {
+              CanvasJS.addColorSet("colours",
+                [
+                "#003e74",
+                "#00ACD7"
+                ]);
+
+              CanvasJS.addColorSet("coloursExp",
+                [
+                "white",
+                "#00ACD7",
+                "#ED254E"
+                ]);
+
+            $("#chartContainer").CanvasJSChart({
+              colorSet: "colours",
+              title: {
+              },
+              axisY: {
+                title: "Pounds, £m"
+              },
+              toolTip: {
+                content: "{label} <br/>{name} : £{y}m"
+              },
+              data: [
+              {
+                type: "stackedColumn",
+                name: "Expenditure",
+                showInLegend: true,
+                dataPoints: [
+                  { label: "2011", y: 660},
+                  { label: "2012", y: 702},
+                  { label: "2013", y: 755},
+                  { label: "2014", y: 794},
+                  { label: "2015", y: 835},
+                  { label: "2016", y: 901}
+                ]
+              },
+              {
+                type: "stackedColumn",
+                name: "Surplus",
+                showInLegend: true,
+                dataPoints: [
+                  { label: "2011", y: 95},
+                  { label: "2012", y: 61},
+                  { label: "2013", y: 87},
+                  { label: "2014", y: 86},
+                  { label: "2015", y: 130},
+                  { label: "2016", y: 78}
+                ]
+              }
+              ]
+            });
+
+
+
+            $("#expenditureChart").CanvasJSChart({
+              colorSet: "coloursExp",
+              backgroundColor: "#002044",
+              title: {
+              },
+              axisX: {
+                labelFontColor: "white"
+              },
+              axisY: {
+                title: "Pounds, £m",
+                titleFontColor: "white",
+                labelFontColor: "white"
+              },
+              legend: {
+                fontColor: "white"
+              },
+              toolTip: {
+                content: "{label} <br/>{name} : £{y}m"
+              },
+              data: [
+              {
+                type: "stackedColumn",
+                name: "Internally funded",
+                showInLegend: true,
+                dataPoints: [
+                  { label: "2011", y: 33},
+                  { label: "2012", y: 47},
+                  { label: "2013", y: 86},
+                  { label: "2014", y: 178},
+                  { label: "2015", y: 162},
+                  { label: "2016", y: 157}
+                ]
+              },
+              {
+                type: "stackedColumn",
+                name: "Externally funded",
+                showInLegend: true,
+                dataPoints: [
+                  { label: "2011", y: 44},
+                  { label: "2012", y: 30},
+                  { label: "2013", y: 20},
+                  { label: "2014", y: 28},
+                  { label: "2015", y: 74},
+                  { label: "2016", y: 29}
+                ]
+              },
+              {
+                type: "stackedColumn",
+                name: "Finance leases",
+                showInLegend: true,
+                dataPoints: [
+                  { label: "2011", y: 0},
+                  { label: "2012", y: 75},
+                  { label: "2013", y: 18},
+                  { label: "2014", y: 0},
+                  { label: "2015", y: 0},
+                  { label: "2016", y: 0}
+                ]
+              }
+              ]
+            });
+            }
+          </script>
+        <div id="chartContainer" style="width: 100%; height: 300px"></div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>During the same time period, the <b>net value of the College's assets</b> rose from £843m to £1,415m - an increase of £572m.</p>
+            <p>This represents a combined income and increase in asset value of over <b>£1.1bn</b>.
+
+            <p style="font-size: 9pt; color: gray;">* sources: http://www.imperial.ac.uk/finance/about-us/publications/</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="expenditure">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Expenditure</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>Most of the College's expenditure is covered by its annual income, as seen above. So what is happening with this £1.1bn?</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h3>Capital Expenditure</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>According to <a href="http://www.imperial.ac.uk/media/imperial-college/administration-and-support-services/finance/public/Web-Income-and-Expenditure-14-15.pdf">this document
+            </a>, the College's operating surpluses are used to fund capital projects. This includes developments
+            such as <b>Woodward Buildings</b> (opened 2015) and the new <b>White City campus</b> (opened 2017).</p>
+            <p>The College documents its capital expenditure in each annual report. The expenditure is as follows:</p>
+          </div>
+        </div>
+        <div id="expenditureChart" style="width: 100%; height: 300px"></div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>We can clearly see how capital expenditure has risen substantially in the past few years, with the aforementioned Woodward Buildings and White City campus constructions
+              contributing largely to this.</p>
+            <p>Add up the numbers, and then take away money provided as part of <a href="http://www.hefce.ac.uk/funding/capital/">HEFCE capital grants</a> (£124m between 2011-2016), and we arrive
+              at a total internal expenditure of <b>£539m</b>, or roughly equivalent to the total surplus operated over this time period.</p>
+            <p><b>This still leaves virtually all of the asset money untouched - around £570m.</b></p>
+            <br>
+            <p style="font-size: 9pt; color: gray;">sources: http://www.imperial.ac.uk/finance/about-us/publications/</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="suggestions">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Should the College be doing anything?</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>The College itself notes in its 2014/15 annual report that <i>"the high cost of living in London can be a deterrent [to students]."</i> Yet it seems the College is
+            doing little to amend this situation. In the <a href="http://felixonline.co.uk/comment/3363/action-against-acton/"><i>Felix</i> report</a> on the <i>Against Acton</i> campaign in 2013, a student-led campaign opposing the construction of a new
+            student halls in Acton, it is noted that <i>"UCAS information shows that the number one reason, by a mile, that students who have been accepted turn down Imperial is living costs."</i></p>
+            <p>Four years later and it still appears that Imperial is doing little to make itself a welcoming university for people of all backgrounds. The university charges some of the country's highest rents
+            for its student accommodation; <a href="http://www.independent.co.uk/student/student-life/finances/most-expensive-universities-uk-britain-tuition-fees-living-costs-accommodation-regents-university-a7509501.html">a report from the Independent</a>
+            found Imperial to be the country's most expensive non-private university to attend. For many students applying to Imperial, the cost of the accommodation closest to the main campus - Beit, Eastside and Southside -
+            is almost prohibitively expensive. This leaves such students with a significantly reduced range of accommodation options for their first year at university.</p>
+            <p><b>University, and the life that comes with it, should be accessible to anybody who deserves it - not just those who can afford it.</b></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h3>College Accommodation</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>In 2016/17, the average cost of accommodation at Imperial College was <b>£169.43</b> per week, or <b>£6,607.77</b> per year (assuming a 39 week rent). With a total of
+            2,820 beds available across Imperial's 11 accommodation sites, the College's total income from accommodation was <b>£477,794pw</b>, or <b>£18,633,966</b> for the academic year.</p>
+            <p>In real terms, this comes in at around <b>2%</b> of the College's annual turnover. Is it really so unreasonable to suggest, for the sake of the students who are simply
+            unable to afford living in South Kensington, or are priced out of applying to Imperial altogether, that the College absorbs some of the accommodation costs from its surpluses?</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h3>Price Capping</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>Based on the price structure for accommodation in 2016/17, <b>a cap on all accommodation at £170pw would reduce Imperial's annual income by less than £3m / year</b>, and yet would
+              have a profound impact on the financial situation of many students at the College. Such a move would be a huge step towards encouraging applicants from a wider range of backgrounds
+              to study at the College, and would also make Imperial's accommodation provision much fairer; no longer would South Kensington be accessible only to the university's wealthier students.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h4>Try it Yourself</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+
+        <div class="container">
+          <div class="price-slider">
+            <h4 class="great">Price Cap</h4>
+            <span>Set your own price cap, and see how much it would cost!</span>
+            <div class="col-sm-12">
+              <div id="slider"></div>
+            </div>
+          </div>
+
+          <div class="price-form">
+
+            <div class="form-group">
+              <label for="amount" class="col-sm-6 control-label">Price cap:</label>
+              <div class="col-sm-6">
+                <input type="hidden" id="amount" class="form-control">
+                <p class="price lead" id="amount-label"></p>
+                <span class="price">.00</span>
+              </div>
+            </div>
+            <hr class="style">
+            <div class="form-group total">
+              <label for="total" class="col-sm-6 control-label"><strong>Annual revenue: </strong></label>
+              <div class="col-sm-6">
+                <input type="hidden" id="revenue" class="form-control">
+                <p class="price lead" id="revenue-label"></p>
+                <span class="price">.00</span>
+              </div>
+            </div>
+            <div class="form-group total">
+              <label for="total" class="col-sm-6 control-label"><strong>Annual cost to Imperial: </strong></label>
+              <div class="col-sm-6">
+                <input type="hidden" id="cost" class="form-control">
+                <p class="price lead" id="cost-label"></p>
+                <span class="price">.00</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-lg-12 text-center">
+            <h4>Hall-by-hall breakdown</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <center>
+            <table style="width: 80%;">
+              <tr>
+                <th>Hall</th>
+                <th>Room type</th>
+                <th>No. beds</th>
+                <th>£/week</th>
+                <th>£/year</th>
+              </tr>
+              <tr>
+                <td>Alban Hall</td>
+                <td>Standard single</td>
+                <td>74</td>
+                <td></td>
+            </table>
+          </center>
+          </div>
+        </div> -->
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <p style="font-size: 10pt; color: grey;">Thanks to Thomas Yung, Paul Balaji and Alex Lloyd</p>
+                <div class="links">
+                <h4>
+                <div class="btnhome whitelink"><a href="https://harryrbrown.github.io">harryrbrown.github.io</a>
+                </h4>
+            </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- jQuery -->
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+<!-- <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
+    <script src="jquery-ui.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+          $("#slider").slider({
+              animate: true,
+              value:170,
+              min: 0,
+              max: 270,
+              step: 1,
+              slide: function(event, ui) {
+                  update(1,ui.value); //changed
+              }
+          });
+
+          //Added, set initial value.
+          $("#amount").val(170);
+          $("#duration").val(0);
+          $("#cost").val(0);
+          $("#amount-label").text(0);
+          $("#duration-label").text(0);
+          $("#cost-label").text(0);
+
+          update();
+      });
+
+      //changed. now with parameter
+      function update(slider,val) {
+        //changed. Now, directly take value from ui.value. if not set (initial, will use current value.)
+        var $amount = slider == 1?val:$("#amount").val();
+        var $duration = slider == 2?val:$("#duration").val();
+        var $cost = 0;
+
+        var $alban1 = Math.min(225, $amount);
+        var $beit1 = Math.min(220, $amount);
+        var $beit2 = Math.min(196, $amount);
+        var $beit3 = Math.min(145, $amount);
+        var $beit4 = Math.min(139, $amount);
+        var $costume1 = Math.min(128, $amount);
+        var $eastside1 = Math.min(267, $amount);
+        var $eastside2 = Math.min(226, $amount);
+        var $eastside3 = Math.min(145, $amount);
+        var $parsons1 = Math.min(128, $amount);
+        var $pembridge1 = Math.min(152, $amount);
+        var $pembridge2 = Math.min(137, $amount);
+        var $pembridge3 = Math.min(104, $amount);
+        var $pembridge4 = Math.min(99, $amount);
+        var $boathouse1 = Math.min(137, $amount);
+        var $southside1 = Math.min(267, $amount);
+        var $southside2 = Math.min(239, $amount);
+        var $southside3 = Math.min(150, $amount);
+        var $wilson1 = Math.min(185, $amount);
+        var $wilson2 = Math.min(157, $amount);
+        var $wilson3 = Math.min(145, $amount);
+        var $wilson4 = Math.min(124, $amount);
+        var $wilson5 = Math.min(119, $amount);
+        var $woodward1 = Math.min(145, $amount);
+        var $woodward2 = Math.min(128, $amount);
+        var $woodward3 = Math.min(98, $amount);
+        var $xenia1 = Math.min(210, $amount);
+        var $xenia2 = Math.min(191, $amount);
+        var $xenia3 = Math.min(146, $amount);
+        var $xenia4 = Math.min(133, $amount);
+        var $xenia5 = Math.min(115, $amount);
+
+         $total = ($alban1*74 + $beit1*156 + $beit2*55 + $beit3*120 + $beit4*8 + $costume1*173 + $eastside1*134 + $eastside2*228 + $eastside3*92 + $parsons1*42
+                    + $pembridge1*42 + $pembridge2*30 + $pembridge3*18 + $pembridge4*6 + $boathouse1*7 + $southside1*104 + $southside2*119 + $southside3*182 + $wilson1*61
+                    + $wilson2*240 + $wilson3*30 + $wilson4*24 + $wilson5*36 + $woodward1*17 + $woodward2*571 + $woodward3*102 + $xenia1*15 + $xenia2*86 + $xenia3*22
+                    + $xenia4*2 + $xenia5*24) * 39;
+         $cost = (18633966 - $total);
+
+         $( "#amount" ).val($amount);
+         $( "#amount-label" ).text("£" + numberWithCommas($amount));
+         $( "#duration" ).val($duration);
+         $( "#duration-label" ).text($duration);
+         $( "#revenue" ).val($total);
+         $( "#revenue-label" ).text("£" + numberWithCommas($total));
+         $( "#cost" ).val($cost);
+         $( "#cost-label" ).text("£" + numberWithCommas($cost));
+
+         $('#slider a').html('<label><span class="glyphicon glyphicon-chevron-left"></span> '+$amount+' <span class="glyphicon glyphicon-chevron-right"></span></label>');
+      }
+
+      function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      }
+    </script>
+
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="../js/jqBootstrapValidation.js"></script>
+    <script src="../js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../js/freelancer.min.js"></script>
+
+    <!-- <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script> -->
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+   </div>
+
+</body>
+
+</html>
