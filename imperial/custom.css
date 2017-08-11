@@ -46,12 +46,20 @@ header {
     color: white;
 }
 
+footer {
+  background-color: #ED254E;
+}
+
+footer a, footer a:hover {
+  color: white;
+}
+
 section.income, section.suggestions {
   background-color: white;
   color: #002044;
 }
 
-section.expenditure {
+section.expenditure, section.sources {
   background-color: #002044;
   color: white;
 }

@@ -29,7 +29,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
+
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -299,7 +299,7 @@
         </div>
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h4>Try it Yourself</h4>
+            <h3>Try it Yourself</h3>
           </div>
         </div>
         <div class="row">
@@ -347,48 +347,246 @@
 
           </div>
         </div>
-        <!-- <div class="row">
-          <div class="col-lg-12 text-center">
-            <h4>Hall-by-hall breakdown</h4>
+        <div class="row">
+          <div class="col-lg-12 text-center hallbreakdown" style="cursor: pointer;">
+            <h4>Hall-by-hall breakdown (click to show / hide)</h4>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-12 text-center">
             <center>
-            <table style="width: 80%;">
+            <table style="width: 80%; display: none;" class="halltable">
               <tr>
                 <th>Hall</th>
                 <th>Room type</th>
                 <th>No. beds</th>
                 <th>£/week</th>
-                <th>£/year</th>
               </tr>
               <tr>
                 <td>Alban Hall</td>
                 <td>Standard single</td>
                 <td>74</td>
+                <td><span id="alban1"></span></td>
+              </tr>
+              <tr>
+                <td>Beit Hall</td>
+                <td>Ensuite single</td>
+                <td>156</td>
+                <td><span id="beit1"></span></td>
+              </tr>
+              <tr>
                 <td></td>
+                <td>Standard single</td>
+                <td>55</td>
+                <td><span id="beit2"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Ensuite twin</td>
+                <td>120</td>
+                <td><span id="beit3"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Standard twin</td>
+                <td>8</td>
+                <td><span id="beit4"></span></td>
+              </tr>
+              <tr>
+                <td>The Costume Store</td>
+                <td>Ensuite single</td>
+                <td>173</td>
+                <td><span id="costume1"></span></td>
+              </tr>
+              <tr>
+                <td>Eastside</td>
+                <td>Premium ensuite single</td>
+                <td>134</td>
+                <td><span id="eastside1"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Ensuite single</td>
+                <td>228</td>
+                <td><span id="eastside2"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Ensuite twin</td>
+                <td>92</td>
+                <td><span id="eastside3"></span></td>
+              </tr>
+              <tr>
+                <td>Parsons House</td>
+                <td>Standard single</td>
+                <td>42</td>
+                <td><span id="parsons1"></span></td>
+              </tr>
+              <tr>
+                <td>Pembridge Hall</td>
+                <td>Ensuite single</td>
+                <td>42</td>
+                <td><span id="pembridge1"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Standard single</td>
+                <td>30</td>
+                <td><span id="pembridge2"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Ensuite twin</td>
+                <td>18</td>
+                <td><span id="pembridge3"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Standard twin</td>
+                <td>6</td>
+                <td><span id="pembridge4"></span></td>
+              </tr>
+              <tr>
+                <td>Putney Boathouse</td>
+                <td>Standard single</td>
+                <td>7</td>
+                <td><span id="boathouse1"></span></td>
+              </tr>
+              <tr>
+                <td>Southside</td>
+                <td>Premium ensuite single</td>
+                <td>104</td>
+                <td><span id="southside1"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Ensuite single</td>
+                <td>119</td>
+                <td><span id="southside2"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Ensuite twin</td>
+                <td>182</td>
+                <td><span id="southside3"></span></td>
+              </tr>
+              <tr>
+                <td>Wilson</td>
+                <td>Ensuite single</td>
+                <td>61</td>
+                <td><span id="wilson1"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Standard single</td>
+                <td>240</td>
+                <td><span id="wilson2"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Basement standard single</td>
+                <td>30</td>
+                <td><span id="wilson3"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Ensuite twin</td>
+                <td>24</td>
+                <td><span id="wilson4"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Standard twin</td>
+                <td>36</td>
+                <td><span id="wilson5"></span></td>
+              </tr>
+              <tr>
+                <td>Woodward Buildings</td>
+                <td>Premium ensuite single</td>
+                <td>17</td>
+                <td><span id="woodward1"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Ensuite single</td>
+                <td>571</td>
+                <td><span id="woodward2"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Ensuite twin</td>
+                <td>102</td>
+                <td><span id="woodward3"></span></td>
+              </tr>
+              <tr>
+                <td>Xenia</td>
+                <td>Top floor ensuite single</td>
+                <td>15</td>
+                <td><span id="xenia1"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Ensuite single</td>
+                <td>86</td>
+                <td><span id="xenia2"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Standard single</td>
+                <td>22</td>
+                <td><span id="xenia3"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Ensuite twin</td>
+                <td>2</td>
+                <td><span id="xenia4"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Standard twin</td>
+                <td>24</td>
+                <td><span id="xenia5"></span></td>
+              </tr>
+
             </table>
           </center>
           </div>
-        </div> -->
+        </div>
 
       </div>
     </section>
 
+    <section class="sources">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Sources</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>All charts presented in "Assets and Surpluses" and "Expenditure" were drawn from information found in Imperial College's <b>annual reports</b>,
+            specifically the reports from 2014/15 and 2015/16, which can be found <a href="http://www.imperial.ac.uk/finance/about-us/publications/">here</a>.</p>
+            <p>College accommodation information for 2016/17 can be found via the <b>Wayback Machine</b> (<a href="https://web.archive.org/web/20161128200835/https://www.imperial.ac.uk/study/campus-life/accommodation/halls/compare/">see
+              here</a>). Accommodation prices for the current academic year can be found at <a href="https://www.imperial.ac.uk/study/campus-life/accommodation/halls/compare/">
+                https://www.imperial.ac.uk/study/campus-life/accommodation/halls/compare/</a>.</p>
+            <p>The interactive price capping slider is based on Amirol Ahmad's <a href="https://bootsnipp.com/snippets/featured/bootstrap-pricing-slider-donations">Bootstrap
+              Pricing Slider</a>.</p>
+              <br>
+            <p>Thanks to Thomas Yung, Paul Balaji and Alex Lloyd.</p>
+          </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <p style="font-size: 10pt; color: grey;">Thanks to Thomas Yung, Paul Balaji and Alex Lloyd</p>
-                <div class="links">
-                <h4>
-                <div class="btnhome whitelink"><a href="https://harryrbrown.github.io">harryrbrown.github.io</a>
-                </h4>
-            </div>
-
-            </div>
-        </div>
+      <div class="container">
+          <h4>
+          <div class="whitelink"><a href="https://harryrbrown.github.io">harryrbrown.github.io</a></div>
+          </h4>
+      </div>
     </footer>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
@@ -481,6 +679,39 @@
          $( "#cost" ).val($cost);
          $( "#cost-label" ).text("£" + numberWithCommas($cost));
 
+         $( "#alban1" ).text("£" + $alban1);
+         $( "#beit1" ).text("£" + $beit1);
+         $( "#beit2" ).text("£" + $beit2);
+         $( "#beit3" ).text("£" + $beit3);
+         $( "#beit4" ).text("£" + $beit4);
+         $( "#costume1" ).text("£" + $costume1);
+         $( "#eastside1" ).text("£" + $eastside1);
+         $( "#eastside2" ).text("£" + $eastside2);
+         $( "#eastside3" ).text("£" + $eastside3);
+         $( "#parsons1" ).text("£" + $parsons1);
+         $( "#pembridge1" ).text("£" + $pembridge1);
+         $( "#pembridge2" ).text("£" + $pembridge2);
+         $( "#pembridge3" ).text("£" + $pembridge3);
+         $( "#pembridge4" ).text("£" + $pembridge4);
+         $( "#boathouse1" ).text("£" + $boathouse1);
+         $( "#southside1" ).text("£" + $southside1);
+         $( "#southside2" ).text("£" + $southside2);
+         $( "#southside3" ).text("£" + $southside3);
+         $( "#wilson1" ).text("£" + $wilson1);
+         $( "#wilson2" ).text("£" + $wilson2);
+         $( "#wilson3" ).text("£" + $wilson3);
+         $( "#wilson4" ).text("£" + $wilson4);
+         $( "#wilson5" ).text("£" + $wilson5);
+         $( "#woodward1" ).text("£" + $woodward1);
+         $( "#woodward2" ).text("£" + $woodward2);
+         $( "#woodward3" ).text("£" + $woodward3);
+         $( "#xenia1" ).text("£" + $xenia1);
+         $( "#xenia2" ).text("£" + $xenia2);
+         $( "#xenia3" ).text("£" + $xenia3);
+         $( "#xenia4" ).text("£" + $xenia4);
+         $( "#xenia5" ).text("£" + $xenia5);
+
+
          $('#slider a').html('<label><span class="glyphicon glyphicon-chevron-left"></span> '+$amount+' <span class="glyphicon glyphicon-chevron-right"></span></label>');
       }
 
@@ -489,6 +720,13 @@
       }
     </script>
 
+    <script>
+    $(document).ready(function(){
+        $(".hallbreakdown").click(function(){
+            $(".halltable").slideToggle();
+        });
+    });
+    </script>
 
 
     <!-- Bootstrap Core JavaScript -->
