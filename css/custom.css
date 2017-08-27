@@ -22,7 +22,11 @@ body {
 
 header {
     background-color: white;
-    color: #ED254E;
+    color: #011936;
+}
+
+.name {
+  color: #ED254E;
 }
 
 .links {
@@ -39,4 +43,8 @@ header {
 
 .projects span.skills {
 	cursor: pointer;
+}
+
+.modal-content p {
+  color: #011936;
 }
