@@ -58,7 +58,7 @@
                         <div class="intro-text">
                             <span class="name">Harry Brown</span>
                             <br>
-                            <span class="skills">Computing, Imperial College London</span>
+                            <span class="skills">Second Year Computing, Imperial College London</span>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                             <span class="name">ABOUT</span>
                             <br>
                             <span class="skills">Education</span>
-							<p><b>Imperial College London</b>, Computing (2016-)</p>
+							<p><b>Imperial College London</b>, Computing (2016-2020)</p>
 							<p><b>Saffron Walden County High School</b>, GCSE / A-Level (2009-2016)</p>
 
 							<hr>
@@ -92,19 +92,23 @@
                             <span class="name">PROJECTS</span>
                             <h5>Click a project name to show / hide the content</h5>
                             <br>
-                            <div class="row" style="margin: auto auto 100px auto;">
-                              <div class="col-sm-4 portfolio-item">
+                            <div class="row" style="margin: auto auto auto auto;">
+                              <div class="col-sm-4 portfolio-item" style="height: 100px;">
+                                <a class="portfolio-link" data-toggle="modal" href="#arm11"><span class="skills">ARM11 Emulator and Assembler</span></a>
+                              </div>
+                              <div class="col-sm-4 portfolio-item" style="height: 100px;">
                                 <a class="portfolio-link" data-toggle="modal" href="#scrnpt"><span class="skills">ScreenPrint</span></a>
                               </div>
-                              <div class="col-sm-4 portfolio-item">
+                              <div class="col-sm-4 portfolio-item" style="height: 100px;">
                                 <a class="portfolio-link" data-toggle="modal" href="#fln"><span class="skills">Fallen</span></a>
                               </div>
-                              <div class="col-sm-4 portfolio-item">
+                              <div class="col-sm-4 portfolio-item" style="height: 100px;">
                                 <a class="portfolio-link" data-toggle="modal" href="#crbt"><span class="skills">CryptoBot</span></a>
                               </div>
+                              <div class="col-sm-4 portfolio-item" style="height: 100px;">
+                                <a class="portfolio-link" data-toggle="modal" href="#finances"><span class="skills"><i>Imperial College: Finances</i></span></a>
+                              </div>
                             </div>
-
-                            <a class="imperial" data-toggle="modal" href="#finances"><span class="skills"><i>Imperial College: Finances</i></span></a>
                         </div>
                     </div>
                 </div>
@@ -190,6 +194,26 @@
       </div>
     </div>
 
+    <div class="portfolio-modal modal fade" id="arm11" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog" role="document" style="width: 50%; margin: auto; top: 50%; transform: translate(0%, -50%);">
+        <div class="modal-content" style="padding: 100px 10px 20px 10px;">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+            <h2 class="name">ARM11 Emulator and Assembler</h2>
+            <br>
+            <div class="arm11ea">
+                <p>A third term university project, in which I worked with three other students to write in C an ARM11 emulator and assembler, and then write assembler programs to be assembled and deployed on a Raspberry Pi. The project was selected among the best in the year.</p>
+                <img src="img/cryptobot.png" width=70%>
+                <br>
+                <h3><a href="https://github.com/s-ilyas/ARM11-Emulator-Assembler">VIEW SOURCE CODE</a></h3>
+            </div>
+        </div>
+      </div>
+    </div>
+
     <div class="portfolio-modal modal fade" id="crbt" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
       <div class="modal-dialog" role="document" style="width: 50%; margin: auto; top: 50%; transform: translate(0%, -50%);">
         <div class="modal-content" style="padding: 100px 10px 20px 10px;">
@@ -200,7 +224,7 @@
           </div>
             <h2 class="name">CryptoBot</h2>
             <br>
-            <div class="fallen">
+            <div class="cryptobot">
                 <p>CryptoBot is a Telegram bot that connects to a Kraken exchange account, providing you with updates on the value of your investments, plus price information for various cryptocurrencies. I have written the bot to be easily modified to suit different users' accounts.</p>
                 <img src="img/cryptobot.png" width=70%>
                 <br>
@@ -209,6 +233,8 @@
         </div>
       </div>
     </div>
+
+
 
     <div class="portfolio-modal modal fade" id="finances" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
       <div class="modal-dialog" role="document" style="width: 50%; margin: auto; top: 50%; transform: translate(0%, -50%);">
