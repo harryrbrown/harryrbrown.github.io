@@ -43,6 +43,30 @@ header {
 
 .projects span.skills {
 	cursor: pointer;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.portfolio-item {
+  background-color: #ED254E;
+  text-align: left;
+  color: white;
+  border-color: white;
+  width:31%;
+  margin: 10px;
+  background-position: center;
+  background-size: 120%;
+  background-blend-mode: darken;
+}
+
+.portfolio-item:hover {
+  background-blend-mode: lighten;
+  color: #011936;
+}
+
+.portfolio-item a {
+  color: inherit;
 }
 
 .modal-content p {
