@@ -1,0 +1,29 @@
+.spacer.red,.section.red {
+  background: #dd2265;
+}
+
+.btn.btn-theme {
+  background: #dd2265 !important;
+}
+
+#filters ul li a:hover h5,
+#filters ul li a.active h5 {
+    background: #dd2265;
+    border-color: #dd2265;
+}
+
+.navbar .brand a:hover {
+	color:#dd2265;
+}
+
+ul#menu-main > li > a:focus,
+ul#menu-main > li > a:active,
+ul#menu-main > li > a:hover,
+ul#menu-main > li > a.selected,
+ul#menu-main li a.selected:active {
+    color: #dd2265;
+}
+
+.portfolio .portfolio-overlay {
+    background: #dd2265;
+}
