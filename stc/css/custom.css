@@ -27,3 +27,17 @@ ul#menu-main li a.selected:active {
 .portfolio .portfolio-overlay {
     background: #dd2265;
 }
+
+#contact-form input[type="password"] {
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+#contact-form input[type="password"], .contactForm textarea {
+    background: rgba(227, 231, 228, 1);
+    font-family: 'Open Sans', sans serif;
+    border: 0;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: middle;
+}
