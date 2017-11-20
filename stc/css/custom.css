@@ -2,6 +2,11 @@
   background: #dd2265;
 }
 
+.section.black {
+  background: #312f2b;
+  color: white;
+}
+
 .btn.btn-theme {
   background: #dd2265 !important;
 }
