@@ -1,5 +1,5 @@
 html {
-    background: url("../img/bg.jpg") no-repeat center center fixed;
+    /*background: url("../img/bg.jpg") no-repeat center center fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -14,6 +14,8 @@ body {
     vertical-align: middle;
     height: 100%;
     background-color: transparent;
+    font-family: Roboto;
+    color: #46494C;
 }
 
 .inner {
@@ -26,19 +28,60 @@ header {
 }
 
 .name {
-  color: #ED254E;
+  color: #1985a1;
+}
+
+.subtitle {
+  color: #4C5C68;
+  font-size: 30pt;
+}
+
+.tagline {
+  font-size: 20pt;
 }
 
 .links {
     align: center;
 }
 
+a {
+  color: #C5C3C6;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+   color: #1985A1;
+   text-decoration: none;
+ }
+
+.btn-outline {
+  color: #C5C3C6;
+}
+
+.btn-outline:hover {
+  color: #1985A1;
+}
+
+.btn-outline:focus {
+  color: #4C5C68;
+}
+
 .btnhome, .btnabout, .btnprojects {
     display: inline;
 }
 
+.btnhome a, .btnabout a, .btnprojects a {
+  color: #C5C3C6;
+  text-decoration: none;
+}
+
+.btnhome a:hover, .btnabout a:hover, .btnprojects a:hover {
+  color: #1985A1;
+  text-decoration: none;
+}
+
 .whitelink a {
-    color: white;
+    color: #4C5C68;
 }
 
 .projects span.skills {
@@ -49,7 +92,7 @@ header {
 }
 
 .portfolio-item {
-  background-color: #ED254E;
+  background-color: #C5C3C6;
   text-align: left;
   color: white;
   border-color: white;
@@ -71,4 +114,18 @@ header {
 
 .modal-content p {
   color: #011936;
+}
+
+.problem {text-align:center}
+.enclose {
+  z-index: -1;
+  position:fixed;
+  bottom:0px;
+  margin: 0px;
+  width:100%;
+  left: 0px;
+  height: 20%;
+  background-position: center;
+  background-size: 120%;
+  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)), url("../img/bg/greenwich.jpeg");
 }

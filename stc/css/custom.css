@@ -11,6 +11,20 @@
   background: #dd2265 !important;
 }
 
+@media(max-width: 767px) {
+  .navbar-inner h1.brand {
+    margin-bottom:20px;
+  }
+
+  #main-flexslider ul.slides li p {
+    font-size: 50px;
+  }
+
+  #header-wrapper {
+    min-height: 450px;
+  }
+}
+
 #filters ul li a:hover h5,
 #filters ul li a.active h5 {
     background: #dd2265;
