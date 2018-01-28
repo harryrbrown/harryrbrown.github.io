@@ -29,6 +29,7 @@ header {
 
 .name {
   color: #1985a1;
+  font-size: 100pt;
 }
 
 .subtitle {
@@ -38,6 +39,30 @@ header {
 
 .tagline {
   font-size: 20pt;
+}
+
+@media (max-width: 500px) {
+  .name {
+    color: #1985a1;
+    font-size: 40pt;
+  }
+
+  .subtitle {
+    color: #4C5C68;
+    font-size: 30pt;
+  }
+
+  .tagline {
+    font-size: 15pt;
+  }
+
+  .portfolio-modal, .modal-content h2 {
+    font-size: 0.8em;
+  }
+
+  p {
+    size:15px;
+  }
 }
 
 .links {
@@ -92,15 +117,14 @@ a:hover, a:focus {
 }
 
 .portfolio-item {
-  background-color: #C5C3C6;
-  text-align: left;
-  color: white;
+  background-size: 0px;
+  /*text-align: left;
   border-color: white;
   width:31%;
   margin: 10px;
   background-position: center;
   background-size: 120%;
-  background-blend-mode: darken;
+  background-blend-mode: darken;*/
 }
 
 .portfolio-item:hover {
@@ -116,16 +140,44 @@ a:hover, a:focus {
   color: #011936;
 }
 
-.problem {text-align:center}
-.enclose {
-  z-index: -1;
-  position:fixed;
-  bottom:0px;
-  margin: 0px;
-  width:100%;
-  left: 0px;
-  height: 20%;
-  background-position: center;
-  background-size: 120%;
-  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)), url("../img/bg/greenwich.jpeg");
+.modal-dialog {
+  width: 50%;
+  margin: auto;
+  top: 50%;
+}
+
+@media (max-width: 500px) {
+  .modal-dialog {
+    width: 90%;
+    margin: auto;
+    top: 90%;
+  }
+}
+
+@media (min-width: 500px) {
+  .portfolio-item {
+    background-color: #C5C3C6;
+    text-align: left;
+    color: white;
+    border-color: white;
+    width:31%;
+    margin: 10px;
+    background-position: center;
+    background-size: 120%;
+    background-blend-mode: darken;
+  }
+
+  .problem {text-align:center}
+  .enclose {
+    z-index: -1;
+    position:fixed;
+    bottom:0px;
+    margin: 0px;
+    width:100%;
+    left: 0px;
+    height: 20%;
+    background-position: center;
+    background-size: 120%;
+    /*background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)), url("../img/bg/greenwich.jpeg");*/
+  }
 }
