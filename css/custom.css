@@ -27,9 +27,14 @@ header {
     color: #011936;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto Slab;
+}
+
 .name {
   color: #1985a1;
   font-size: 100pt;
+  font-family: Roboto Slab;
 }
 
 .subtitle {
@@ -39,12 +44,15 @@ header {
 
 .tagline {
   font-size: 20pt;
+  font-family: Roboto Slab;
+
 }
 
 @media (max-width: 500px) {
   .name {
     color: #1985a1;
     font-size: 40pt;
+    font-family: Roboto Slab;
   }
 
   .subtitle {
@@ -118,6 +126,7 @@ a:hover, a:focus {
 
 .portfolio-item {
   background-size: 0px;
+  background-color: white;
   /*text-align: left;
   border-color: white;
   width:31%;
