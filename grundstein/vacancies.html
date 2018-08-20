@@ -1,0 +1,61 @@
+<html>
+<head>
+  <title>
+    Grundstein Global
+  </title>
+  <link rel="stylesheet" href="pages.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <table style="table-layout: fixed; width: 100%">
+    <tr>
+      <td width="30%">
+        <div class="title">
+          <div style="color: #ccc; font-size: 20pt">Grundstein Global::</div> Vacancies
+        </div>
+        <br><br>
+        <a href="index.html">Home</a>
+      </td>
+      <td width="70%">
+        <div class="list">
+          <div class="item" id="111">
+            <h3>Example job</h3>
+            Posted on Aug 20th, 2018  |  Click to expand
+            <div class="toggle">
+              <br>
+              More information available here
+            </div>
+          </div>
+          <div class="item">
+            <h3>Example job</h3>
+            Posted on Aug 20th, 2018
+          </div>
+          <div class="item">
+            <h3>Example job</h3>
+            Posted on Aug 20th, 2018
+          </div>
+          <div class="item">
+            <h3>Example job</h3>
+            Posted on Aug 20th, 2018
+          </div>
+          <div class="item">
+            <h3>Example job</h3>
+            Posted on Aug 20th, 2018
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+</body>
+
+<script>
+$('#111').click(function() {
+    $('.toggle').slideToggle('fast').addClass( "show" );
+    return false;
+});
+
+</script>
+
+</html>
