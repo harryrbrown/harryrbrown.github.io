@@ -5,7 +5,7 @@ body {
   ) repeat;*/
 }
 
-@media screen and (min-width: 1000px) {
+@media screen  {
   .main {
     position: absolute;
     top: 50%;
@@ -33,18 +33,18 @@ body {
 }
 
 .title h1 {
-  font-size: 68pt;
+  font-size: 5vw;
   background-color: white;
   padding: 10px 10px 0px 10px;
   margin: 10px;
 }
 
 .subtitle p {
-  font-size: 15pt;
+  font-size: 1.5vw;
 }
 
 .comingsoon h2 {
-  font-size: 30pt;
+  font-size: 2vw;
     font-family: "portermedium";
     text-align: center;
     margin: 0;
@@ -71,7 +71,8 @@ a {
 
 .button:hover {
    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  background-color: #f4f1bb;
+  background-color: #222222;
+  color: white;
 }
 
 footer {
