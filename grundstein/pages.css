@@ -19,6 +19,11 @@ td h3 {
   font-size: 150%;
 }
 
+.right a {
+  color: #222;
+  text-decoration: none;
+}
+
 .left a {
   font-family: "portermedium";
   color: #222;
@@ -28,7 +33,7 @@ td h3 {
 }
 
 .list {
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .item {
