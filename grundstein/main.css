@@ -5,6 +5,11 @@ body {
   ) repeat;*/
 }
 
+html,
+body {
+    height: 100%;
+}
+
 @media screen  {
   .main {
     position: absolute;
@@ -90,7 +95,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 10%;
+  height: 15%;
   color: #222;
   text-align: center;
 }
@@ -113,11 +118,7 @@ footer {
   }
 
   .bottom {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     /*width: 100%;*/
-    height: 10%;
     color: #222;
     text-align: center;
   }
