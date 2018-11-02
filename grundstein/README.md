@@ -1,1 +1,0 @@
-# grundsteinglobal.github.io
