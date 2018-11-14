@@ -1,0 +1,356 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>Grundstein Global</title>
+    <link rel="stylesheet" type="text/css" href="js/viewScroller.css">
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+        /* Custom views styles */
+        
+        .view1 {
+            background-color: white;
+            color: black;
+        }
+        
+        .view3 {
+            background-color: black;
+            color: white;
+        }
+
+        .view2 {
+            background-color: black;
+            background-image: url("img/whatweoffer.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            color: white;
+        }
+        
+        .view5 {
+            background-color: #28D5CF;
+        }
+        
+        .subview-a {
+            background-color: #2ABAAE;
+        }
+        
+        .subview-b {
+            background-color: #0EAB91;
+        }
+        
+        .subview-c {
+            background-color: #13AD58;
+        }
+        
+        .subview-d {
+            background-color: #45bca1;
+        }
+        
+        .subview-e {
+            background-color: #23dc94;
+        }
+        
+        /* Styles specific for this example */
+        
+        a {
+            text-decoration: none;
+            /* font-size: 13px; */
+            color: #000;
+        }
+        
+        .menu {
+            position: fixed;
+            left: 20%;
+            text-align: right;
+            width: 60%;
+            margin: auto;
+            top: 50px;
+            font-size: 20px;
+            z-index: 10;
+        }
+        
+        .forkme {
+            position: fixed;
+            z-index: 30;
+            top: 0;
+            right: 0;
+            border: 0;
+        }
+        
+        .logo {
+            width: 80%;
+            min-width: 230px;
+            min-height: 230px;
+            max-width: 488px;
+            max-height: 488px;
+ 
+        }
+		
+		input[type="button"] {
+            -webkit-appearance: none;
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 12px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 2px #000;
+        }
+        
+        /* Extends predefined vs-center class */
+        
+        .vs-center {
+            font-family: "portermedium", Tahoma;
+            font-size: 50px;
+            text-align: left;
+            /* color: rgba(0, 0, 0, 1); */
+        }
+
+        .vs-center-wrap {
+            width: 60%;
+            margin: auto;
+        }
+
+        .blink_me {
+            animation: blinker 1s linear infinite;
+        }
+
+        .vs-anchor {
+            font-family: "porterlight";
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="mainbag">
+        <div vs-anchor="jobs-1" class="mainview view1">
+        
+            <div class="menu">
+                <a href="index.html" style="padding-right: 30px; font-family: 'porterlight';">HOME</a>
+                <a class="vs-anchor" style="padding-right: 30px; color: grey;">JOIN THE TEAM</a>
+                <a href="index.html#contact" style="padding-right: 30px; font-family: 'porterlight';">CONTACT US</a>
+            </div>
+
+            <div style="height: 50%;">
+
+            <div class="vs-center-wrap">
+                <div class="vs-center">
+                    <h4>Become a founding member!</h4>
+                    <p style="font-family: 'Open Sans'; font-size: 50%;">We are looking for talented individuals with a broad range of skillsets to help us grow our community. If you are interested
+                    in joining our team,</p>
+                    <br>
+                    <div style="right: 0px; text-align: right; font-size: 50%;">
+                        Send your CV and the position you are interested in to:
+                    </div>
+                    <div style="right: 0px; text-align: right; font-size: 70%; font-family: 'porterbold'">
+                        recruiting@grundstein.global
+                    </div>
+                </div>
+            </div>
+
+            <hr align="right" width="60%" size="10" noshade color="black">
+
+            <div style="height: 50%;">
+                <div class="vs-center-wrap" style="width: 80%;">
+                    <div class="vs-center">
+                        <br><br>
+                        <table style="width: 100%; text-align: center; font-size: 45%; table-layout: fixed;">
+                            <tr>
+                                <td><img src="img/whiteboard.png" width="200px"></td>
+                                <td><img src="img/Tool.png" width="150px"></td>
+                                <td><img src="img/developer.png" width="200px"></td>
+                            </tr>
+                            <tr>
+                                <td>Concept Developer</td>
+                                <td>Graphic Designer</td>
+                                <td>Platform Developer</td>
+                            </tr>
+                            <tr style="font-family: 'Open Sans'; font-size: 70%; color: grey;">
+                                <td>more info ></td>
+                                <td>more info ></td>
+                                <td>more info ></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+
+        <div vs-anchor="jobs-2" class="mainview view1">
+            <div style="height: 50%;">
+                <div class="vs-center-wrap" style="width: 80%;">
+                    <div class="vs-center">
+                        <br><br>
+                        <table style="width: 100%; text-align: center; font-size: 45%; table-layout: fixed;">
+                            <tr>
+                                <td><img src="img/database.png" width="200px"></td>
+                                <td><img src="img/Creditcard.png" width="200px"></td>
+                                <td><img src="img/Document.png" width="200px"></td>
+                            </tr>
+                            <tr>
+                                <td>Database Specialist</td>
+                                <td>Finance Specialist</td>
+                                <td>Legal Advisor</td>
+                            </tr>
+                            <tr style="font-family: 'Open Sans'; font-size: 70%; color: grey;">
+                                <td>more info ></td>
+                                <td>more info ></td>
+                                <td>more info ></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 40%;">
+                <div class="vs-center-wrap" style="width: 80%;">
+                    <div class="vs-center">
+                        <table style="width: 100%; text-align: center; font-size: 45%; table-layout: fixed;">
+                            <tr>
+                                <td><img src="img/event.png" width="200px"></td>
+                                <td><img src="img/Communication.png" width="200px"></td>
+                                <td><img src="img/binocular.png" width="200px"></td>
+                            </tr>
+                            <tr>
+                                <td>Events Developer</td>
+                                <td>Communication Specialist</td>
+                                <td>Recruiter & Talent Sourcer</td>
+                            </tr>
+                            <tr style="font-family: 'Open Sans'; font-size: 70%; color: grey;">
+                                <td>more info ></td>
+                                <td>more info ></td>
+                                <td>more info ></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 10%; ">
+                <table style="width: 100%;">
+                    <tr>
+                        <td width="80%">
+                            <hr align="left" size="10" noshade color="black">
+                        </td>
+                        <td>
+                            <p style="font-family: 'portermedium'">ANTI DISCRIMINATION STATEMENT</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div vs-anchor="whattoexpect" class="mainview view1">
+            <div class="vs-center-wrap" style="width: 80%;">
+                <div class="vs-center">
+                    <!--<div class="info" style="padding-top: 30%;">-->
+                        <table style="width: 100%; table-layout: fixed; font-size: 50%;">
+                            <tr>
+                                <td>
+                                    <h4>What to expect:</h4>
+                                    <div style="font-family: 'Open Sans'">
+                                        <p>
+                                            - Work with a team of extraordinarily ambitious students
+                                        </p>
+                                        <p>
+                                            - 3-4 months of teamwork starting from October 2018
+                                        </p>
+                                        <p>
+                                            - 6-10 hours/week of workload
+                                        </p>
+                                    </div>
+                                    <h4>What we need from you:</h4>
+                                    <div style="font-family: 'Open Sans'">
+                                        <p>
+                                            - High commitment and high sense of responsibility
+                                        </p>
+                                        <p>
+                                            - Be a team player and problem solver
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4>What you will get:</h4>
+                                    <div style="font-family: 'Open Sans'">
+                                        <p>
+                                            - Skip the selection process and join the community directly
+                                        </p>
+                                        <p>
+                                            - Special status in the community as a Founding Member
+                                        </p>
+                                        <p>
+                                            - Own Grundstein Global in the form of shares
+                                        </p>
+                                        <p>
+                                            - Exclusive opportunity to fill a senior position after launch
+                                        </p>
+                                        <p>
+                                            - Many opportunities to befriend like-minded driven individuals
+                                        </p>
+                                        <p>
+                                            - Many influential connections in your future
+                                        </p>
+                                        <p>
+                                            - A motivating and inspiring community to pursue your dreams
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    <br>
+                    <center>
+                        <p style="font-size: 50%; font-family: 'porterbold'">
+                            Copyright © Grundstein Global 2018
+                        </p>
+                        <p style="font-size: 30%; font-family: 'porterlight'">
+                            SITE NOTICE / IMPRESSUM
+                        </p>
+                        <p style="font-size: 30%; font-family: 'porterlight'">
+                            PRIVACY POLICY / DATENSCHUTZERKLAERUNG
+                        </p>
+                        <p style="font-size: 30%; font-family: 'porterlight'">
+                            CREDITS
+                        </p>
+                    </center>
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/viewScroller.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            // Sets viewScroller
+            $('.mainbag').viewScroller({
+                useScrollbar: false,
+                changeWhenAnim: false
+            });
+
+        });
+    </script>
+</body>
+
+</html>

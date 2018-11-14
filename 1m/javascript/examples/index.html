@@ -1,0 +1,446 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>Grundstein Global</title>
+    <link rel="stylesheet" type="text/css" href="js/viewScroller.css">
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+        /* Custom views styles */
+        
+        .view1 {
+            background-color: white;
+            color: black;
+        }
+        
+        .view3 {
+            background-color: black;
+            color: white;
+        }
+
+        .view2 {
+            background-color: black;
+            background-image: url("img/whatweoffer.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            color: white;
+        }
+        
+        .view5 {
+            background-color: #28D5CF;
+        }
+        
+        .subview-a {
+            background-color: #2ABAAE;
+        }
+        
+        .subview-b {
+            background-color: #0EAB91;
+        }
+        
+        .subview-c {
+            background-color: #13AD58;
+        }
+        
+        .subview-d {
+            background-color: #45bca1;
+        }
+        
+        .subview-e {
+            background-color: #23dc94;
+        }
+        
+        /* Styles specific for this example */
+        
+        a {
+            text-decoration: none;
+            /* font-size: 13px; */
+            color: #000;
+        }
+        
+        .menu {
+            position: fixed;
+            left: 20%;
+            text-align: right;
+            width: 60%;
+            margin: auto;
+            top: 50px;
+            font-size: 20px;
+            z-index: 10;
+        }
+        
+        .forkme {
+            position: fixed;
+            z-index: 30;
+            top: 0;
+            right: 0;
+            border: 0;
+        }
+        
+        .logo {
+            width: 80%;
+            min-width: 230px;
+            min-height: 230px;
+            max-width: 488px;
+            max-height: 488px;
+ 
+        }
+		
+		input[type="button"] {
+            -webkit-appearance: none;
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 12px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 2px #000;
+        }
+        
+        /* Extends predefined vs-center class */
+        
+        .vs-center {
+            font-family: "portermedium", Tahoma;
+            font-size: 50px;
+            text-align: left;
+            /* color: rgba(0, 0, 0, 1); */
+        }
+
+        .vs-center-wrap {
+            width: 60%;
+            margin: auto;
+        }
+
+        .blink_me {
+            animation: blinker 1s linear infinite;
+        }
+
+        .vs-anchor {
+            font-family: "porterlight";
+        }
+
+        input[type=text] {
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            font-family: 'Courier New', Courier, monospace;
+            color: grey;
+            font-size: 100%;
+            <!--font-size: 50%;-->
+            <!--border-bottom: 2px solid grey;-->
+        }
+
+        input:focus {
+            outline-width: 0;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="mainbag">
+        <div vs-anchor="home" class="mainview view1">
+        
+                <div class="menu">
+                        <a class="vs-anchor" style="padding-right: 30px; color: grey;">HOME</a>
+                        <a href="joinus.html" style="padding-right: 30px; font-family: 'porterlight';">JOIN THE TEAM</a>
+                        <a href="#contact" class="vs-anchor">CONTACT US</a>
+                        <!-- <a href="#view-4" class="vs-anchor"><button>View 4</button></a>
+                        <a href="#view-5" class="vs-anchor"><button>View 5</button></a>
+                        <button class="vs-mainview-prev">prev</button>
+                        <button class="vs-mainview-next">next</button><br>
+                        <a href="../index.html">Click here to go back to homepage and all examples</a><br> -->
+                </div>
+
+            <div class="vs-center-wrap">
+                <div class="vs-center">
+                    <h1>Build</h1>
+                    <h2>the most powerful instrument in your life.</h2>
+                    <p style="font-family: 'Courier New', Courier, monospace; font-size: 50%; color: grey;">invitation id > <span><input type="text" autofocus></span></p>
+                </div>
+            </div>
+        </div>
+        <!-- <div vs-anchor="view-2" class="mainview">
+            <div class="subbag">
+                <div vs-anchor="subview-a" class="subview subview-a">
+                    <div class="vs-center-wrap">
+                        <div class="vs-center">
+                            Subview A
+                            <div class="pos">
+                                <input type="button" value="&lt;" class="vs-subview-prev">
+                                <a href="#subview-a" class="vs-anchor"><input type="button" value="A"></a>
+                                <a href="#subview-b" class="vs-anchor"><input type="button" value="B"></a>
+                                <a href="#subview-c" class="vs-anchor"><input type="button" value="C"></a>
+                                <input type="button" value="&gt;" class="vs-subview-next">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div vs-anchor="subview-b" class="subview subview-b">
+                    <div class="vs-center-wrap">
+                        <div class="vs-center">
+                            Subview B
+                            <div class="pos">
+                                <input type="button" value="&lt;" class="vs-subview-prev">
+                                <a href="#subview-a" class="vs-anchor"><input type="button" value="A"></a>
+                                <a href="#subview-b" class="vs-anchor"><input type="button" value="B"></a>
+                                <a href="#subview-c" class="vs-anchor"><input type="button" value="C"></a>
+                                <input type="button" value="&gt;" class="vs-subview-next">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div vs-anchor="subview-c" class="subview subview-c">
+                    <div class="vs-center-wrap">
+                        <div class="vs-center">
+                            Subview C
+                            <div class="pos">
+                                <input type="button" value="&lt;" class="vs-subview-prev">
+                                <a href="#subview-a" class="vs-anchor"><input type="button" value="A"></a>
+                                <a href="#subview-b" class="vs-anchor"><input type="button" value="B"></a>
+                                <a href="#subview-c" class="vs-anchor"><input type="button" value="C"></a>
+                                <input type="button" value="&gt;" class="vs-subview-next">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div vs-anchor="mission" class="mainview view3">
+            <div class="vs-center-wrap">
+                <div class="vs-center">
+                    <div class="info">
+                        <p style="margin-bottom: 0px; font-family: 'Open Sans'; font-size: 70%;">&mdash; Better Together</p>
+
+                        <p>The mission of Grundstein Global is to build the most
+                            influential network by connecting extraordinarily
+                            driven and talented individuals.
+                        </p>
+                        <p>It aims to create a naturally inspiring and
+                            collaborative environment for its members
+                            to stay connected and prosper together, with 
+                            the intention of making a difference in the 
+                            world for our generation and the generations 
+                            to come.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div vs-anchor="bepart" class="mainview view2">
+                <div class="vs-center-wrap">
+                    <div class="vs-center">
+                        <div class="info" style="padding-top: 30%;">
+                            <center>
+                                <p style="font-size: 60%;">Be part of:</p>
+                                <div id="whatweoffer" style="width: 75%"></div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div vs-anchor="about" class="mainview view3">
+                <div class="vs-center-wrap">
+                    <div class="vs-center">
+                        <div class="info">
+                            <h3>&mdash; "Grundstein Global <span style="font-family: 'Open Sans'">is</span></h3>
+                            <p style="font-family: 'Courier New', Courier, monospace; font-size: 60%; margin-left: 200px;">
+                                a highly selective community that aims
+                                to connect the most driven and talented 
+                                individuals around us. The community is 
+                                run and improved by its members, with 
+                                one goal in mind: bonding, collaborating
+                                and inspiring one another, now and for 
+                                many years to come.
+                            </p>
+                            <br>
+                            <table style="width: 100%; font-size: 45%; text-align: center;">
+                                <tr>
+                                    <td><img src="img/Community.png" width="200px" style="filter: invert(100%);"/></td>
+                                    <td><img src="img/filter.png" width="200px" style="filter: invert(100%);"/></td>
+                                    <td><img src="img/Star.png" width="100px" style="filter: invert(100%);"/></td>
+                                    <td><img src="img/innovation.png" width="100px" style="filter: invert(100%);"/></td>
+                                    <td><img src="img/Egotist.png" width="100px" style="filter: invert(100%);"/></td>
+                                    <td><img src="img/tree roots.png" width="100px" style="filter: invert(100%);"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Real-life community</td>
+                                    <td>Highly selective</td>
+                                    <td>Diversified in skill</td>
+                                    <td>Shaped by members</td>
+                                    <td>Self-centred nature</td>
+                                    <td>Lifelong network</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div vs-anchor="signup" class="mainview view3">
+            <div style="height: 70%;">
+                <div class="vs-center-wrap">
+                    <div class="vs-center">
+                        <div class="info">
+                            <h4 style="margin: 0px;">Take the next step</h4>
+                            <h4 style="margin: 0px;">Sign up today.</h4>
+                            <h4 style="margin: 0px;">You can be the first one to get invited!</h4>
+                            <form onsubmit="return update()">
+                            <p style="font-family: 'Courier New', Courier, monospace; font-size: 60%;">
+                                YOUR EMAIL > <span><input type="text" style="color: white; background-color: black;"></span>
+                            </p>
+                            <input type="submit" style="display: none" />
+                            </form>
+                            <br><br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="invitedText" style="height: 30%; text-align: right; display: none;">
+                <table style="width: 100%; height: 100%;">
+                    <tr>
+                        <td style="vertical-align: bottom">
+                            <span style="font-size: 1600%; font-family: 'porterbold'; bottom: 0px">INVITED</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div vs-anchor="contact" class="mainview view4">
+                <!-- <div class="menu">
+                        <a href="#view-1" class="vs-anchor" style="padding-right: 30px;">HOME</a>
+                        <a href="#view-2" class="vs-anchor" style="padding-right: 30px; color: grey;">JOIN THE TEAM</a>
+                        <a href="#view-3" class="vs-anchor">CONTACT US</a>
+                </div> -->
+                <div class="vs-center-wrap">
+                    <div class="vs-center">
+                        <div class="info">
+                            <p style="margin-bottom: 0px; font-family: 'Open Sans'; font-size: 70%;">&mdash; How to reach us</p>
+                            <table>
+                                <tr>
+                                    <td>                            
+                                        <p style="margin-left: 200px; font-size: 60%">hello@grundstein.global</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <p style="margin-bottom: 0px; font-family: 'Open Sans'; font-size: 70%;">&mdash; Where to meet us</p>
+                            <table style="margin-left: 200px; font-size: 60%; table-layout: fixed; width: 80%;">
+                                <tr>
+                                    <td><p>LONDON</p></td>
+                                    <td>MUNICH</td>
+                                    <td>BERLIN</td>
+                                    <td>ONLINE</td>
+                                </tr>
+                            </table>
+                            <p style="margin-bottom: 0px; font-family: 'Open Sans'; font-size: 70%;">&mdash; Connect with us</p>
+                            <table style="margin-left: 200px; font-size: 60%; table-layout: fixed; width: 60%;">
+                                <tr>
+                                    <td><p>LINKEDIN</p></td>
+                                    <td>MEDIUM</td>
+                                    <td>TWITTER</td>
+                                </tr>
+                            </table>
+                            <br><br><br>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        
+        
+        
+        <!-- <div vs-anchor="view-4" class="mainview">
+            <div class="subbag">
+                <div vs-anchor="subview-d" class="subview subview-d">
+                    <div class="vs-center-wrap">
+                        <div class="vs-center">
+                            Subview D
+                            <div class="pos">
+                                <input type="button" value="&lt;" class="vs-subview-prev">
+                                <a href="#subview-d" class="vs-anchor"><input type="button" value="D"></a>
+                                <a href="#subview-e" class="vs-anchor"><input type="button" value="E"></a>
+                                <input type="button" value="&gt;" class="vs-subview-next">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div vs-anchor="subview-e" class="subview subview-e">
+                    <div class="vs-center-wrap">
+                        <div class="vs-center">
+                            Subview E
+                            <div class="pos">
+                                <input type="button" value="&lt;" class="vs-subview-prev">
+                                <a href="#subview-d" class="vs-anchor"><input type="button" value="D"></a>
+                                <a href="#subview-e" class="vs-anchor"><input type="button" value="E"></a>
+                                <input type="button" value="&gt;" class="vs-subview-next">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div vs-anchor="view-5" class="mainview view5">
+            <div class="vs-center-wrap">
+                <div class="vs-center">
+                    <div class="info">View 5</div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/viewScroller.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            // Sets viewScroller
+            $('.mainbag').viewScroller({
+                useScrollbar: false,
+                changeWhenAnim: false
+            });
+
+        });
+    </script>
+    <script>
+        var text = ["An inspiring, motivating & collaborative environment", "Trustworthy & powerful connections in the future", "Deep & profound friendships for life"];
+        var counter = 0;
+        var elem = document.getElementById("whatweoffer");
+        var inst = setInterval(change, 3000);
+
+        function change() {
+          elem.innerHTML = text[counter];
+          counter++;
+          if (counter >= text.length) {
+            counter = 0;
+            // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+          }
+        }
+    </script>
+    <script>
+        function update() {
+            var invited = document.getElementById("invitedText");
+            if (invited.style.display == "none") {
+                invited.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "porterbold";
+    src:url("../fonts/Porter Bold.otf");
+}
+
+@font-face {
+    font-family: "portermedium";
+    src:url("../fonts/Porter Medium.otf");
+}
+
+@font-face {
+    font-family: "porterlight";
+    src:url("../fonts/Porter Light.otf");
+}
