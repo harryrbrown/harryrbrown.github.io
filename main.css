@@ -1,6 +1,6 @@
 body {
   /* background: url(background.png) repeat; */
-  background-color: black;
+  /* background-color: black; */
   /* url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAABjUlEQVQoU2NkbO38v1xNkyEtPIZBactKBtvt2xgmy/ExXLAIYshgfsxwzSaOYe26zQyMQpV1//+s3siweGovQ+yUGQwsOloMK82dGVq6ghnOCzswfFTezCDMWc7AOH/Bov+Je3YzrPAPZejgZmW4l1fBwHDvPtiU1u1rGZqfrGR4l7eUgdEhPe9/tWcw2AQ940iGKRIyDBtMjBnq//5mqPj6myHiwUkGvplbGBhzc3P/MzAwMCx88JzB8O0BhszCeQwRG1cz8J24xMCgqQp2ynsebojVCRdSGTZ5bmXwv7SfwUDbhmHHKk+G8FsiDDVlaxlqxd4zcCzcx8B44fDZ/587vBjsrIoYdmlbMGzauwZs+ic7dQahd8wM7x7fZ7iQXsDAaHFsw39QEHyK8gdbpzSpA+w2YVZ+hlK2bwwXz19isH/0lIGRobv6P0jnNCMThqOHdjNcOruc4fwraYaPPjcYjtwWYPC+KQF2K9iNC4+fYfjg78nQyMzKEOsZBDadUVOHgffEaYa1yblgkwGG8Zyit9v/6gAAAABJRU5ErkJggg==) repeat; */
   background-size: 10vw;
   margin: 0px;
@@ -19,16 +19,16 @@ body {
 
 .title {
   /*background-color: #222;*/
-  font-family: "Oswald";
-  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
   /* color: #222; */
-  color: #fff;
+  color: black;
   margin: 0;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 p {
-  font-family: 'Oswald';
+  font-family: 'Raleway';
 }
 
 p a {
@@ -48,10 +48,14 @@ p a {
 }
 
 .title h1 {
-  font-size: 8vw;
-  padding: 10px 10px 0px 10px;
+  font-size: 4vw;
+  /* padding: 10px 10px 0px 10px; */
   /* background-color: white; */
-  margin: 10px;
+  /* margin: 10px; */
+}
+
+.title h2 {
+  color: #e01a4f;
 }
 
 .subtitle p {
@@ -104,12 +108,12 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 80%;
   height: 30%;
   padding-top: 2%;
   color: white;
-  background-color: black;
-  text-align: center;
+  /* background-color: black; */
+  /* text-align: center; */
 }
 
 .bottom a {
@@ -124,8 +128,8 @@ footer {
   height: 1vh;
   background-color: #E01A4F;
   border-top: 1vh;
-  border-style: solid none none none;
-  border-color: #0C090D;
+  /* border-style: solid none none none;
+  border-color: #0C090D; */
   text-align: center;
 }
 
@@ -154,16 +158,15 @@ footer {
 }
 
 @font-face {
-    font-family: "porterbold";
-    src:url("fonts/Porter Bold.otf");
+  font-family: 'myFirstFont';
+  src: url(fonts/Simple-Line-Icons.ttf);
 }
 
-@font-face {
-    font-family: "porterlight";
-    src:url("fonts/Porter Light.otf");
+img.socialIcon {
+  opacity: 0.25;
+  transition: opacity 0.5s;
 }
 
-@font-face {
-    font-family: "portermedium";
-    src:url("fonts/Porter Medium.otf");
+img.socialIcon:hover {
+  opacity: 0.7;
 }
