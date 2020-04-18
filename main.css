@@ -190,6 +190,7 @@ footer {
 
 #hoverimage1, #hoverimage2 {
   box-shadow: 0 0 0 0px #E01A4F;
+  -webkit-filter: grayscale(50%);
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -199,7 +200,7 @@ footer {
 #hoverimage1:hover, #hoverimage2:hover {
   box-shadow: 0 0 0 10px #26547C;
   filter: grayscale(50%);
-  -webkit-filter: grayscale(50%);
+  -webkit-filter: grayscale(0%);
 }
 
 #hoverimage1 .imagetext h2, #hoverimage2 .imagetext h2 {
