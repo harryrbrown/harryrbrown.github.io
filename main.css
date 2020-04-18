@@ -51,10 +51,12 @@ body {
 
 p {
   font-family: 'Raleway';
+  color: #222;
 }
 
 p a {
   color: #E01A4F;
+  text-decoration: none;
 }
 
 .title p {
@@ -138,7 +140,7 @@ footer {
   position: fixed;
   right: 2vh;
   bottom: 2vh;
-  width: 80%;
+  width: 20%;
   /* height: 30%; */
   padding-top: 2%;
   color: white;
