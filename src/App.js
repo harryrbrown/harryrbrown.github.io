@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
+import _Switch from './pages/Switch';
 import logo from './logo.svg';
 import './App.css';
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/work" component={Work} />
           <Route path="/contact" component={Contact} />
+          <Route path="/switch" component={_Switch} />
         </AnimatedSwitch>
         <BottomLine></BottomLine>
       </div>
