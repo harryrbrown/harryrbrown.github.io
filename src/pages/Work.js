@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom';
 import { Card, Drawer, Row, Col, Divider } from 'antd';
 import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
 
+import NavbarBack from './../components/NavbarBack';
+
 import prosopagnosiapp from './../img/prosopagnosiapp.png';
 import sentimentanalysis from './../img/sentimentanalysis.png';
 import sparsematrix from './../img/sparsematrix.png';
 import londonbusinessschool from './../img/lbs.png';
 import newtondavid from './../img/newtondavid.png';
 import newcroft from './../img/newcroft.png';
+import chevillagehall from './../img/che.png';
 
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 import './home.css';
@@ -57,6 +60,9 @@ export default class About extends React.Component{
     render(){
         const { visible } = this.state;
         return (
+            <div>
+            
+            <NavbarBack></NavbarBack>
             <div class="main">
                 <div class="title">
                     <h1>
@@ -81,14 +87,17 @@ export default class About extends React.Component{
                     </Col>
                     <Col className="gutter-row" span={8}>
                         <FilledCard img={londonbusinessschool} title="London Business School Healthcare Conference 2020" onclick={this.showDrawer}
-                            description="Second year university project in collaboration with Microsoft and Brunel University. A tool was developed to provide an initial online
-                            screening for prosopagnosia. Using Google Glass, we then developed a prototype software to assist people with prosopagnosia in recognising familiar
-                            faces. My personal highlight of university! 😃"></FilledCard>
+                            description="I was commissioned by London Business School's Healthcare Club to create a website for their 11th annual conference in February
+                            2020."></FilledCard>
                     </Col>
-                </Row>
+                </Row><br></br><br></br>
                 <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
                     <Col className="gutter-row" span={8}>
-                        <FilledCard img={sparsematrix} title="Cornish Hall End Village Hall" onclick={this.showDrawer}
+                        <FilledCard img={chevillagehall} title="Cornish Hall End Village Hall" onclick={this.showDrawer}
+                            description="For my final year project, I ..."></FilledCard>
+                    </Col>
+                    <Col className="gutter-row" span={8}>
+                        <FilledCard img={chevillagehall} title="Grundstein Global" onclick={this.showDrawer}
                             description="For my final year project, I ..."></FilledCard>
                     </Col>
                 </Row>
@@ -138,6 +147,7 @@ export default class About extends React.Component{
                     <p>Some contents...</p>
                     <p>Some contents...</p>
                 </Drawer>
+            </div>
             </div>
         );
     }
