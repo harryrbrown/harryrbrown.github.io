@@ -1,0 +1,27 @@
+@media screen  {
+    .main {
+      padding-top: 20vh;
+      padding-left: 10%;
+      padding-right: 10%;
+      /* width: 80%; */
+      height: auto;
+    }
+
+    
+    .imgBg {
+      z-index: -1;
+      left: 0;
+      width: 97%;
+      height: 100%;
+      position: absolute;
+      background-color: #E01A4F;
+      background-image: url("./../img/holborn.jpg");
+      background-blend-mode: lighten;
+      background-position-x: center;
+      background-position-y: 60%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.7;
+    }
+
+}
