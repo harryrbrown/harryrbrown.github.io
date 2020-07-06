@@ -130,7 +130,16 @@ export default class About extends React.Component{
                     </Col>
                 </Row>
 
-                <br></br>
+                <br></br><br></br>
+                <Divider orientation="left"><h1 style={{color: "#E01A4F"}}>Apps</h1></Divider><br></br>
+                <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+                    <Col className="gutter-row" span={8}>
+                        <FilledCard img={sparsematrix} title="Fallen" onclick={this.showDrawer}
+                            description="Mobile game released for Android in 2014."></FilledCard>
+                    </Col>
+                </Row>
+
+                <br></br><br></br>
                 
                 </div>
 

@@ -15,7 +15,10 @@ const Background = () => (
                 {(() => {
                     if (alpha == null) {
                         return (
-                            <div class="imgBg"></div>
+                            <div className="imgBgShell">
+                                <div class="imgBg"></div>
+                            </div>
+                            
                         )
                     } else {
                         if (i_alpha == null || i_alpha == 0) {
@@ -24,13 +27,16 @@ const Background = () => (
                             i_gamma = gamma;
                         }
 
-                        var diff_g = (gamma - i_gamma) * -0.8;
-                        var diff_a = (alpha - i_alpha) * -0.8;
-                        var diff_b = (beta - i_beta)  * -0.8 ;
+                        var diff_g = (gamma - i_gamma) * -0.4;
+                        var diff_a = (alpha - i_alpha) * -0.4;
+                        var diff_b = (beta - i_beta)  * -0.4;
 
-                        return ( // diff_b + 72
-                            <div className="imgBgShell" style={{WebkitTransform: `rotateX(${diff_b+0}deg) rotateY(${diff_g}deg)`}}>
-                                <div class="imgBg"></div>
+                        diff_b = Math.max(Math.min(diff_b, 30), -30);
+                        diff_g = Math.max(Math.min(diff_g, 30), -30);
+
+                        return (
+                            <div className="imgBgShell">
+                                <div class="imgBg" style={{transform: `translateX(${diff_g}px) translateY(${diff_b}px) scale(1.1)`}}></div>
                             </div>
                         )
                     }
